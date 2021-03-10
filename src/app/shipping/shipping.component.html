@@ -1,0 +1,6 @@
+<h3>Shipping Prices</h3>
+
+<div class="shipping-item" *nfFor="let shipping in shippingCosts | async">
+  <span>{{shipping.type}}</span>
+  <span>{{shipping.price | currency}}</span>
+</div>
